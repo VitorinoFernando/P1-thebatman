@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles-contato.css"/>
+</head>
+<body>
+    <header> <!--É a parte de cima da página -->
+        <img id="logo" src="./batman logo.png" /> <!--Aqui é adicionando a imagem da logo -->
+        <nav> <!--Criação da navegação-->
+            <ul> <!--Lista não oredenada-->
+                <a href="./index.html"> <!--É a ancora que leva o usuário a clicar e ir na outra PG html-->
+                    <li>Home</li>
+                </a>
+                <a href="./Contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./Fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./Comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form>
+            <div>
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" required/>
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="number" placeholder="Digite seu telefone" name="telefone" required/>
+            </div>
+            <div>
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu E-mail" name="E-mail" required/>
+            </div>
+            <div>
+                <label>Mensagem</label>
+                <textarea rows="10" name="msg" required></textarea>
+            </div>
+            <div>
+                <input type="submit" name="Enviar"/>
+            </div>
+    
+        </form>
+    </section>
+    <footer> <!--É o rodapé da imagem-->
+        <img style="object-fit: contain;" id="logo" src="./batman logo.png"/> <!--object-fit é para a imagem não perder qualidade-->
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por Fernando Vitorino</span>
+        <nav class="footer-navigation"> <!--Criação da navegação com class para ela sumir quando for dektop e aparecer quando for movel-->
+            <ul class="footer-list"> <!--Lista não oredenada-->
+                <a href="./index.html"> <!--É a ancora que leva o usuário a clicar e ir na outra PG html-->
+                    <li>Home</li>
+                </a>
+                <a href="./Contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./Fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./Comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

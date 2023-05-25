@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor pro', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+}
+
+li hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#galeria-container {
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 415px;
+    
+}
+
+.content {
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /*3 de 1 coluna. 3 colunas iguais.*/
+    row-gap: 10px; /*O espassamento das linhas*/
+    column-gap: 40px;
+    background-size: cover;
+    background-position: 20% 80%;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 300px;
+    margin-top: 3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam Thmor pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){ /*O @media é para fazer as mudanças quando a tela estiver em celular ou menor que 768px*/
+    .footer-navigation {
+        display: block; /*o footer não apaecia mas agora ele aparece*/
+    }
+    nav {
+        display: none;
+    }
+
+    #galeria > div {
+        float: right;
+        width: 25%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .cena img {
+        width: 100%;
+        display: block;
+    }
+    
+    .detalhes  {display: none;}
+    
+    #galeria .cena:target{
+        position: fixed;
+        width: 50%;
+        top: 15px;
+        right: 25%;
+        padding: 5px;
+        background: #fff;
+        border-radius: 5px;
+    }
+}

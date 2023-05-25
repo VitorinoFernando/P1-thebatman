@@ -1,0 +1,113 @@
+* { /*Aqui zera tudo sem padrao de margens ou medidas e cores*/
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {  /*Edição do header, tamanho de letra, display e etc*/
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav { /*navegação*/
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor pro', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+}
+
+li hover {
+    color: #D21617
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    position: relative;
+    top: 90px;
+}
+
+form {
+    font-family: 'kdam Thmor pro', sans-serif;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+form input, textarea {
+    padding: 20px;
+    min-width: 300px;
+    border-color: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+}
+
+form input[type=submit] {
+    background-color: #D21617;
+    color: #fff;
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    position: relative;
+    top: 130px;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam Thmor pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
